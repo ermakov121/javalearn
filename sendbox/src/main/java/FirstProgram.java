@@ -1,6 +1,12 @@
-public class FirstProgram{
+import java.sql.SQLOutput;
 
-	public static void main (String[] args){
+public class FirstProgram {
 
-System.out.println("Hello, world!"); }
+    public static void main(String[] args) {
+
+        System.out.println("Hello, world!");
+
+        Square s = new Square(8);
+        System.out.println("Площадь квадрата со стороной " + s.a + " = " + s.area());
+    }
 }
