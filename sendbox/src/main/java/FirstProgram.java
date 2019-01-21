@@ -7,6 +7,6 @@ public class FirstProgram {
         System.out.println("Hello, world!");
 
         Square s = new Square(8);
-        System.out.println("Площадь квадрата со стороной " + s.a + " = " + s.area());
+        System.out.println("лощадь квадрата со стороной " + s.a + " = " + s.area());
     }
 }
