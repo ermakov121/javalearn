@@ -1,4 +1,4 @@
-import java.sql.SQLOutput;
+package ru.stqa.pft.sandbox;
 
 public class FirstProgram {
 

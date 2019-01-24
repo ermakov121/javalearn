@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/sendbox/src/main/main.iml" filepath="$PROJECT_DIR$/sendbox/src/main/main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eat-tests.iml" filepath="$PROJECT_DIR$/.idea/modules/eat-tests.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eat-tests.main.iml" filepath="$PROJECT_DIR$/.idea/modules/eat-tests.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/eat-tests.test.iml" filepath="$PROJECT_DIR$/.idea/modules/eat-tests.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sendbox.iml" filepath="$PROJECT_DIR$/.idea/modules/sendbox.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sendbox.main.iml" filepath="$PROJECT_DIR$/.idea/modules/sendbox.main.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/sendbox.test.iml" filepath="$PROJECT_DIR$/.idea/modules/sendbox.test.iml" />
