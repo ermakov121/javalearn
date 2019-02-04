@@ -6,9 +6,11 @@ import org.testng.annotations.*;
 import static org.testng.Assert.*;
 import org.openqa.selenium.*;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.Select;
 
-public class Avtorizacia {
+public class UnitedTestClass {
   private WebDriver driver;
   private String baseUrl;
   private boolean acceptNextAlert = true;
@@ -16,19 +18,20 @@ public class Avtorizacia {
 
   @BeforeClass(alwaysRun = true)
   public void setUp() throws Exception {
-    driver = new FirefoxDriver();
+  //  System.setProperty("webdriver.chrome.driver","D:\List_of_Jar\chromedriver.exe");
+    driver = new ChromeDriver();
     baseUrl = "https://www.katalon.com/";
     driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+    driver.get("https://www.google.com/");
   }
 
   @Test
   public void testUntitledTestCase() throws Exception {
-    driver.get("https://ft01.eat.dks.lanit.ru/");
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Created with sketchtool.'])[1]/following::span[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='close'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Инструкции по регистрации'])[1]/following::button[1]")).click();
-    driver.findElement(By.xpath("(.//*[normalize-space(text()) and normalize-space(.)='Войти как'])[1]/following::span[2]")).click();
-    driver.findElement(By.linkText("Аутентификация через сертификат")).click();
+
+    driver.findElement(By.name("q")).click();
+    driver.findElement(By.name("q")).clear();
+    driver.findElement(By.name("q")).sendKeys("яндекс");
+    driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
   }
 
   @AfterClass(alwaysRun = true)
